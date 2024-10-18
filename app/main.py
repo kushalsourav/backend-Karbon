@@ -15,6 +15,9 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
+@app.route("/")
+def root():
+    return jsonify({"status": "ok"}), 200
 
 @app.route("/upload", methods=["POST"])
 def upload_file():
