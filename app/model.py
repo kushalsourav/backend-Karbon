@@ -1,4 +1,4 @@
-from .rules import (
+from rules import (
     latest_financial_index,
     iscr_flag,
     total_revenue_5cr_flag,

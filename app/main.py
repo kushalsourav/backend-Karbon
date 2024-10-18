@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import os
 import json
 from flask_cors import CORS
-from .model import probe_model_5l_profit
+from model import probe_model_5l_profit
 
 app = Flask(__name__)
 CORS(app)
