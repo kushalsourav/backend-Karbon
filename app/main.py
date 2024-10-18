@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import os
 import json
 from flask_cors import CORS
-import app.model as model
+from .model import probe_model_5l_profit
 
 app = Flask(__name__)
 CORS(app)
@@ -33,7 +33,7 @@ def upload_file():
 
                 data = json.loads(content)
 
-            result = model.probe_model_5l_profit(data["data"])
+            result = probe_model_5l_profit(data["data"])
 
             return jsonify(result), 200
 
