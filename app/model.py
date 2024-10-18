@@ -24,7 +24,7 @@ def probe_model_5l_profit(data: dict):
     borrowing_to_revenue_flag_value = borrowing_to_revenue_flag(
         data, lastest_financial_index_value
     )
-    print("broow", borrowing_to_revenue_flag_value)
+    
     iscr_flag_value = iscr_flag(data, lastest_financial_index_value)
 
     return {
