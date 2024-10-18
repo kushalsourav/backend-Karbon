@@ -21,8 +21,6 @@ def latest_financial_index(data: dict):
     Returns:
     - int: The index of the latest standalone financial entry or 0 if not found.
     """
-    print("enterd 1")
-    print(data)
     print(f"{type(data.get('financials'))=}")
     for index, financial in enumerate(data["financials"]):
         if financial.get("nature") == "STANDALONE":
